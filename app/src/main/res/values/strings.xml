@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">RSyS 6.0.1</string>
+    <string name="app_name">RSyS</string>
+    <string name="textView_title">Bienvenidos al sistema de reportes automatico</string>
+    <string name="textCategoria">¿Cual es el problema?</string>
+    <string name="textViewComentario">Escriba algun comentario (opcional)</string>
+    <string name="editTextComentario"></string>
+    <string name="textViewAuxiliar">En caso de seleccionar "Otro"</string>
+    <string name="textViewNombre">Nombre</string>
+    <string name="textViewApellido">Apellido</string>
+    <string name="textView7">Curso</string>
+    <string name="textView8">Laboratorio</string>
+    <string name="buttonSend">Enviar</string>
+    <string name="textViewPC">N°PC</string>
+    <string name="textViewLab">Laboratorio:</string>
+    <string name="buttonReport">Enviar un reporte</string>
+    <string name="buttonLogin">Iniciar sesion</string>
+    <string name="editTextUser">Usuario</string>
+    <string name="editTextPassword">Contraseña</string>
+    <string name="spinnerPC">Num PC</string>
+
+
+    <string name="buttonDelete">ELIMINAR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
 </resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeleteFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8F5FF"
+        tools:context=".Update">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonBackDelete"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background = "@drawable/ic_arrow_back"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="50dp"
+                    app:srcCompat="@drawable/logoescuela2" />
+
+
+                <TextView
+                    android:id="@+id/textViewEliminacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:gravity="center_horizontal"
+                    android:text="ELIMINACION"
+                    android:textAlignment="center"
+                    android:textColor="#db0000"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewDeleteEleccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Campos a eliminar:"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxDeleteCurso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cursos" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxDeleteLab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Laboratorios" />
+
+                <TextView
+                    android:id="@+id/textViewDeleteCurso"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Cursos"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextDeleteCurso"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/text_bg"
+                    android:ems="10"
+                    android:hint="Introduzca el curso a eliminar"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#404048"
+                    android:textSize="17dp" />
+
+                <EditText
+                    android:id="@+id/editTextDeleteCursoB"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/text_bg"
+                    android:ems="10"
+                    android:hint="Introduzca la categoria (A,B C)"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#404048"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:id="@+id/textViewDeleteLab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Laboratorios"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextDeleteLab"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/text_bg"
+                    android:ems="10"
+                    android:hint="Introduzca el numero de LAB"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:textColorHint="#404048"
+                    android:textSize="17dp" />
+
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/button_bg"
+                    android:text="@string/buttonDelete"
+                    app:backgroundTint="#486eb6" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

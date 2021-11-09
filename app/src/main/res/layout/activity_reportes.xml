@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#f3fafc "
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background = "@drawable/ic_arrow_back"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lema21" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center_horizontal"
+                android:text="REPORTES"
+                android:textAlignment="center"
+                android:textColor="#db0000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewReporte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Reporte"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:hint="Reportes"
+
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#404048"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textViewComent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Comentario"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextComentario"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:hint="(Opcional)"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#404048"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textViewAuxiliar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Otro"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/multiLineAuxiliar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_bg"
+                android:hint="Solo en caso de seleccionar otro"
+                android:inputType="textMultiLine"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:gravity="top"
+                android:textColorHint="#404048"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/textViewNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Nombre"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#404048"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/Apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Apellido"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTextApellido"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:hint="Apellido"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#404048"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/Laboratorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Laboratorio"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerLab"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:hint="Laboratorios"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#404048"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textViewCurso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Curso"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/spinnerCurso"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_bg"
+                android:ems="10"
+                android:hint="Otro"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColorHint="#404048"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textViewPC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="16dp"
+                android:text="PC"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerPC"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/text_bg"
+                android:labelFor="@+id/spinnerPC"
+                android:hint="@strings/spinnerPC"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="#000"
+                android:textColorHint="#404048"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/button_bg"
+                android:text="Enviar"
+                android:layout_marginBottom="40dp"
+                app:backgroundTint="#486eb6" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
