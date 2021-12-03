@@ -10,3 +10,5 @@ Aplicacion Android desarrollada en Java para envio de reportes a una base de dat
 	Algunos selects del formulario mostraran una serie de opciones al usuario en base a los registros disponibles en la base de datos y en base a la eleccion que 
 	haya hecho en otro select.
 -Diseño de app en XML (aún en desarrollo para Dark Theme en ciertos dispositivos).
+-Conexion a base de datos por medios de WebService con PHP.
+-Libreria Volley y HttpRequest
